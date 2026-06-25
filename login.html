@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Login to your MuseumX account – User or Administrator access.">
+  <title>Login – MuseumX</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="form-page">
+    <div class="form-back">
+      <a href="index.html">← Back To Home</a>
+    </div>
+
+    <div class="form-container">
+      <div class="glass-card form-card">
+        <h1>Welcome Back</h1>
+        <p class="form-subtitle">Sign in to access your MuseumX account</p>
+
+        <form id="loginForm">
+          <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.75rem;">Login As:</p>
+          <div class="radio-group">
+            <label>
+              <input type="radio" name="role" value="user" checked>
+              User
+            </label>
+            <label>
+              <input type="radio" name="role" value="admin">
+              Administrator
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label for="loginEmail">Email</label>
+            <input type="email" id="loginEmail" name="email" required placeholder="your@email.com" autocomplete="email">
+            <span class="form-error" id="emailError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="loginPassword">Password</label>
+            <input type="password" id="loginPassword" name="password" required placeholder="Enter your password" autocomplete="current-password">
+          </div>
+
+          <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+
+        <p class="form-footer-link">
+          Don't have an account? <a href="signup.html">Create Account</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MuseumX User Dashboard – manage tickets, exhibits, and profile.">
+  <title>User Dashboard – MuseumX</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="dashboard-sidebar-overlay"></div>
+
+  <div class="dashboard-layout">
+    <aside class="dashboard-sidebar">
+      <div class="sidebar-logo">
+        <a href="index.html" class="nav-logo">STACKLY</a>
+      </div>
+      <div class="sidebar-user">
+        <img class="sidebar-user-avatar" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=84&h=84&q=85" alt="John Visitor" width="42" height="42">
+        <div>
+          <div class="sidebar-user-name">John Visitor</div>
+          <div class="sidebar-user-role">Gold Member</div>
+        </div>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="#" class="active" data-section="dashboard"><span class="icon">◉</span> Dashboard</a>
+        <a href="#" data-section="profile"><span class="icon">◎</span> Profile</a>
+        <a href="#" data-section="tickets"><span class="icon">▣</span> Tickets</a>
+        <a href="#" data-section="exhibits"><span class="icon">▤</span> Exhibits</a>
+        <a href="#" data-section="notifications"><span class="icon">◈</span> Notifications</a>
+        <a href="#" data-section="settings"><span class="icon">⚙</span> Settings</a>
+      </nav>
+      <div class="sidebar-footer">
+        <button class="btn btn-outline btn-sm" style="width: 100%;" data-logout>Logout</button>
+      </div>
+    </aside>
+
+    <div class="dashboard-main">
+      <header class="dashboard-header">
+        <button class="sidebar-toggle hamburger" aria-label="Toggle sidebar">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <span class="dashboard-header-title"><strong>User Portal</strong> · Dashboard</span>
+        <button class="btn btn-outline btn-sm" data-logout>Logout</button>
+      </header>
+
+      <div class="dashboard-content">
+        <!-- Dashboard Section -->
+        <div data-dashboard-section="dashboard">
+          <div class="glass-card welcome-banner reveal">
+            <h1>Welcome back, <span class="text-gradient">Visitor</span></h1>
+            <p>Your personalized museum experience awaits. Explore your tickets, upcoming visits, and latest notifications.</p>
+          </div>
+
+          <div class="dashboard-stats">
+            <div class="glass-card dash-stat-card reveal">
+              <div class="stat-icon">▣</div>
+              <div class="value accent">3</div>
+              <div class="label">Active Tickets</div>
+              <span class="trend trend-up">↑ 1 new</span>
+            </div>
+            <div class="glass-card dash-stat-card reveal">
+              <div class="stat-icon">▤</div>
+              <div class="value accent">12</div>
+              <div class="label">Exhibits Viewed</div>
+              <span class="trend trend-up">↑ 3 this month</span>
+            </div>
+            <div class="glass-card dash-stat-card reveal">
+              <div class="stat-icon">◉</div>
+              <div class="value accent">2</div>
+              <div class="label">Upcoming Visits</div>
+            </div>
+            <div class="glass-card dash-stat-card reveal">
+              <div class="stat-icon">◈</div>
+              <div class="value accent">5</div>
+              <div class="label">Notifications</div>
+              <span class="trend trend-up">2 unread</span>
+            </div>
+          </div>
+
+          <div class="dashboard-grid cols-2">
+            <div class="glass-card dashboard-panel reveal">
+              <div class="panel-header">
+                <h3>Recent Activity</h3>
+                <span class="panel-action">View all</span>
+              </div>
+              <div class="activity-item">
+                <span class="activity-dot"></span>
+                <div>
+                  <strong>Viewed Egyptian Gallery</strong>
+                  <p style="color: var(--text-muted); font-size: 0.8rem;">2 hours ago</p>
+                </div>
+              </div>
+              <div class="activity-item">
+                <span class="activity-dot"></span>
+                <div>
+                  <strong>Booked Night at the Museum</strong>
+                  <p style="color: var(--text-muted); font-size: 0.8rem;">Yesterday</p>
+                </div>
+              </div>
+              <div class="activity-item">
+                <span class="activity-dot"></span>
+                <div>
+                  <strong>Completed VR Time Travel</strong>
+                  <p style="color: var(--text-muted); font-size: 0.8rem;">3 days ago</p>
+                </div>
+              </div>
+              <div class="activity-item">
+                <span class="activity-dot"></span>
+                <div>
+                  <strong>Updated profile preferences</strong>
+                  <p style="color: var(--text-muted); font-size: 0.8rem;">1 week ago</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="glass-card dashboard-panel reveal">
+              <h3>Upcoming Visits</h3>
+              <div class="activity-item">
+                <div class="event-date" style="width: 56px;">
+                  <span class="day">15</span>
+                  <span class="month">Jul</span>
+                </div>
+                <div>
+                  <strong>Night at the Museum</strong>
+                  <p style="color: var(--text-secondary); font-size: 0.85rem;">7:00 PM – After-hours tour</p>
+                </div>
+              </div>
+              <div class="activity-item">
+                <div class="event-date" style="width: 56px;">
+                  <span class="day">05</span>
+                  <span class="month">Aug</span>
+                </div>
+                <div>
+                  <strong>Family Discovery Day</strong>
+                  <p style="color: var(--text-secondary); font-size: 0.85rem;">10:00 AM – All-day event</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="glass-card dashboard-panel reveal">
+              <h3>Notifications</h3>
+              <div class="notification-item">
+                <span class="activity-dot"></span>
+                <div>
+                  <strong>New exhibition opening</strong>
+                  <p style="color: var(--text-muted); font-size: 0.8rem;">Contemporary Art Opening – Aug 18</p>
+                </div>
+              </div>
+              <div class="notification-item">
+                <span class="activity-dot"></span>
+                <div>
+                  <strong>Ticket reminder</strong>
+                  <p style="color: var(--text-muted); font-size: 0.8rem;">Your visit is in 3 days</p>
+                </div>
+              </div>
+              <div class="notification-item">
+                <span class="activity-dot"></span>
+                <div>
+                  <strong>Member exclusive event</strong>
+                  <p style="color: var(--text-muted); font-size: 0.8rem;">Curator talk – RSVP now</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="glass-card dashboard-panel reveal">
+              <h3>Profile Summary</h3>
+              <div class="profile-summary">
+                <img class="profile-avatar" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=128&h=128&q=85" alt="User avatar" loading="lazy" width="64" height="64">
+                <div>
+                  <strong>John Visitor</strong>
+                  <p style="color: var(--text-secondary); font-size: 0.85rem;">Member since 2024</p>
+                  <p style="color: var(--accent-gold); font-size: 0.8rem;">Gold Member</p>
+                </div>
+              </div>
+              <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 1rem;">
+                Email: visitor@museumx.org<br>
+                Visits this year: 8<br>
+                Favorite gallery: Ancient Egypt
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Profile Section -->
+        <div data-dashboard-section="profile" style="display: none;">
+          <h2 class="section-title">Profile</h2>
+          <div class="glass-card dashboard-panel" style="max-width: 600px;">
+            <div class="profile-summary" style="margin-bottom: 2rem;">
+              <img class="profile-avatar" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=128&h=128&q=85" alt="User avatar" width="64" height="64">
+              <div>
+                <strong>John Visitor</strong>
+                <p style="color: var(--text-secondary);">Gold Member</p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Full Name</label>
+              <input type="text" value="John Visitor">
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" value="visitor@museumx.org">
+            </div>
+            <div class="form-group">
+              <label>Phone</label>
+              <input type="tel" value="+1 (555) 123-4567">
+            </div>
+            <button class="btn btn-primary">Save Changes</button>
+          </div>
+        </div>
+
+        <!-- Tickets Section -->
+        <div data-dashboard-section="tickets" style="display: none;">
+          <h2 class="section-title">My Tickets</h2>
+          <div class="cards-grid cols-2">
+            <article class="glass-card" style="padding: 1.5rem;">
+              <span class="card-tag">Active</span>
+              <h3 class="card-title">General Admission</h3>
+              <p class="card-text">Valid until: Dec 31, 2026</p>
+              <p style="color: var(--accent-gold); font-size: 0.85rem; margin-top: 0.5rem;">Ticket #MX-2024-0847</p>
+            </article>
+            <article class="glass-card" style="padding: 1.5rem;">
+              <span class="card-tag">Event</span>
+              <h3 class="card-title">Night at the Museum</h3>
+              <p class="card-text">July 15, 2026 – 7:00 PM</p>
+              <p style="color: var(--accent-gold); font-size: 0.85rem; margin-top: 0.5rem;">Ticket #MX-EVT-1203</p>
+            </article>
+            <article class="glass-card" style="padding: 1.5rem;">
+              <span class="card-tag">Event</span>
+              <h3 class="card-title">Family Discovery Day</h3>
+              <p class="card-text">August 5, 2026 – 10:00 AM</p>
+              <p style="color: var(--accent-gold); font-size: 0.85rem; margin-top: 0.5rem;">Ticket #MX-EVT-1204</p>
+            </article>
+          </div>
+        </div>
+
+        <!-- Exhibits Section -->
+        <div data-dashboard-section="exhibits" style="display: none;">
+          <h2 class="section-title">Saved Exhibits</h2>
+          <div class="cards-grid cols-3">
+            <article class="glass-card">
+              <div class="card-image">
+                <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/09/7a/da/54.jpg" alt="Egyptian gallery" loading="lazy" width="600" height="450">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Egypt: Land of Pharaohs</h3>
+                <p class="card-text">Viewed 3 times</p>
+              </div>
+            </article>
+            <article class="glass-card">
+              <div class="card-image">
+                <img src="https://png.pngtree.com/thumb_back/fh260/background/20240819/pngtree-man-experiencing-virtual-reality-art-gallery-exhibit-image_16169996.jpg" alt="VR exhibit" loading="lazy" width="600" height="450">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">VR Time Travel</h3>
+                <p class="card-text">Completed</p>
+              </div>
+            </article>
+            <article class="glass-card">
+              <div class="card-image">
+                <img src="https://www.contemporaryartissue.com/wp-content/uploads/2021/12/Schermafbeelding-2021-12-16-om-17.09.35-1024x650.png" alt="Modern art" loading="lazy" width="600" height="450">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Modern Expressions</h3>
+                <p class="card-text">Bookmarked</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Notifications Section -->
+        <div data-dashboard-section="notifications" style="display: none;">
+          <h2 class="section-title">All Notifications</h2>
+          <div class="glass-card dashboard-panel">
+            <div class="notification-item">
+              <span class="activity-dot"></span>
+              <div>
+                <strong>New exhibition opening</strong>
+                <p style="color: var(--text-muted); font-size: 0.8rem;">Contemporary Art Opening – Aug 18, 2026</p>
+              </div>
+            </div>
+            <div class="notification-item">
+              <span class="activity-dot"></span>
+              <div>
+                <strong>Ticket reminder</strong>
+                <p style="color: var(--text-muted); font-size: 0.8rem;">Your Night at the Museum visit is in 3 days</p>
+              </div>
+            </div>
+            <div class="notification-item">
+              <span class="activity-dot"></span>
+              <div>
+                <strong>Member exclusive event</strong>
+                <p style="color: var(--text-muted); font-size: 0.8rem;">Curator talk with Dr. Hammond – RSVP now</p>
+              </div>
+            </div>
+            <div class="notification-item">
+              <span class="activity-dot"></span>
+              <div>
+                <strong>New virtual tour available</strong>
+                <p style="color: var(--text-muted); font-size: 0.8rem;">Explore Virtual Pompeii from home</p>
+              </div>
+            </div>
+            <div class="notification-item">
+              <span class="activity-dot"></span>
+              <div>
+                <strong>Membership renewal</strong>
+                <p style="color: var(--text-muted); font-size: 0.8rem;">Your Gold membership renews in 60 days</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Settings Section -->
+        <div data-dashboard-section="settings" style="display: none;">
+          <h2 class="section-title">Settings</h2>
+          <div class="glass-card dashboard-panel" style="max-width: 600px;">
+            <h3 style="margin-bottom: 1rem;">Preferences</h3>
+            <div class="form-group">
+              <label>Email Notifications</label>
+              <select>
+                <option>All notifications</option>
+                <option>Important only</option>
+                <option>None</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Language</label>
+              <select>
+                <option>English</option>
+                <option>Spanish</option>
+                <option>French</option>
+              </select>
+            </div>
+            <h3 style="margin: 1.5rem 0 1rem;">Security</h3>
+            <div class="form-group">
+              <label>New Password</label>
+              <input type="password" placeholder="Enter new password">
+            </div>
+            <button class="btn btn-primary">Update Settings</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

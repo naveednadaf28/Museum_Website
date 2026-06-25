@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact MuseumX – visit information, contact form, FAQ, and directions.">
+  <title>Contact – MuseumX</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">STACKLY</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="exhibitions.html">Exhibitions</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" class="nav-login">Login</a>
+      </nav>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="mobile-menu" aria-label="Mobile navigation">
+    <div class="mobile-menu-header">
+    <a href="index.html" class="mobile-logo">STACKLY</a>
+</div>
+    <button class="mobile-close" aria-label="Close menu">✕</button>
+    <div class="mobile-menu-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="exhibitions.html">Exhibitions</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="login.html">Login</a>
+    </div>
+    <p class="mobile-menu-footer">STACKLY · Est. 1924</p>
+  </nav>
+
+  <main>
+  <!-- Contact Hero -->
+  <section class="hero hero-page">
+    <div class="hero-bg" data-parallax style="background-image: url('https://images.unsplash.com/photo-1541961017774-22349e4a1262?auto=format&fit=crop&w=1920&h=1080&q=85');"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-content">
+      <span class="hero-badge">We're Here to Help</span>
+      <h1 class="hero-title">Contact <span class="text-gradient">Us</span></h1>
+      <p class="hero-subtitle">Plan your visit, ask questions, or connect with our team — we welcome every inquiry.</p>
+    </div>
+  </section>
+
+  <!-- Contact Information -->
+  <section class="section" id="contact-info">
+    <div class="container">
+      <h2 class="section-title reveal">Contact Information</h2>
+      <p class="section-subtitle reveal reveal-delay-1">Reach us through any of the following channels.</p>
+      <div class="contact-info-grid">
+        <article class="glass-card contact-info-card reveal reveal-delay-1">
+          <div class="icon" aria-hidden="true">📍</div>
+          <h3>Address</h3>
+          <address class="address-editable" contenteditable="true" title="Click to edit address">
+            Evolve, Work Studio<br>
+            Bengaluru, Karnataka, India <br>
+            Pincode: 560114
+          </address>
+        </article>
+        <article class="glass-card contact-info-card reveal reveal-delay-2">
+          <div class="icon">📞</div>
+          <h3>Phone</h3>
+          <p>+91 9876543210</p>
+          <p style="margin-top: 0.5rem;">Mon–Fri: 9am – 6pm</p>
+        </article>
+        <article class="glass-card contact-info-card reveal reveal-delay-3">
+          <div class="icon">✉️</div>
+          <h3>Email</h3>
+          <p>info@thestackly.com</p>
+          <p style="margin-top: 0.5rem;">tickets@thestackly.com</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form & Map -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="dashboard-grid cols-2">
+        <div class="reveal">
+          <h2 class="section-title">Send a Message</h2>
+          <p class="section-subtitle">Fill out the form and our team will respond within 24 hours.</p>
+          <form id="contactForm" class="glass-card" style="padding: 2rem;">
+            <div class="form-group">
+              <label for="contactName">Full Name</label>
+              <input type="text" id="contactName" name="name" required placeholder="Your name">
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Email</label>
+              <input type="email" id="contactEmail" name="email" required placeholder="your@email.com">
+            </div>
+            <div class="form-group">
+              <label for="contactSubject">Subject</label>
+              <input type="text" id="contactSubject" name="subject" placeholder="How can we help?">
+            </div>
+            <div class="form-group">
+              <label for="contactMessage">Message</label>
+              <textarea id="contactMessage" name="message" rows="5" required placeholder="Your message..." style="resize: vertical;"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+        <div class="reveal reveal-delay-1">
+          <h2 class="section-title">Location</h2>
+          <p class="section-subtitle">Find us in the heart of the Cultural District.</p>
+          <div class="map-placeholder glass-card">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.74114620492!2d77.61051027513243!3d12.85998848744525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6b37e545493b%3A0x21425372f71e154b!2sEvolve%20Work%20Studio!5e0!3m2!1sen!2sin!4v1782288181638!5m2!1sen!2sin"
+              title="MuseumX location map"
+              loading="lazy">
+            </iframe>
+          </div>
+          <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 1rem; text-align: center;">
+            Open daily: 10:00 AM – 8:00 PM | Last entry at 7:00 PM
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <h2 class="section-title reveal">Frequently Asked Questions</h2>
+      <p class="section-subtitle reveal reveal-delay-1">Quick answers to common visitor questions.</p>
+      <div class="reveal reveal-delay-2">
+        <article class="glass-card faq-item active">
+          <div class="faq-question">
+            <span>What are the museum opening hours?</span>
+            <span class="arrow">▼</span>
+          </div>
+          <div class="faq-answer">
+            MuseumX is open daily from 10:00 AM to 8:00 PM. Last entry is at 7:00 PM. We are closed on Thanksgiving and Christmas Day.
+          </div>
+        </article>
+        <article class="glass-card faq-item">
+          <div class="faq-question">
+            <span>How much are admission tickets?</span>
+            <span class="arrow">▼</span>
+          </div>
+          <div class="faq-answer">
+            General admission is $25 for adults, $18 for seniors, and $12 for children (6–17). Children under 6 are free. Members enjoy unlimited free entry.
+          </div>
+        </article>
+        <article class="glass-card faq-item">
+          <div class="faq-question">
+            <span>Is photography allowed inside?</span>
+            <span class="arrow">▼</span>
+          </div>
+          <div class="faq-answer">
+            Photography without flash is permitted in most galleries. Some special exhibitions may restrict photography — please check signage at each gallery entrance.
+          </div>
+        </article>
+        <article class="glass-card faq-item">
+          <div class="faq-question">
+            <span>Do you offer guided tours?</span>
+            <span class="arrow">▼</span>
+          </div>
+          <div class="faq-answer">
+            Yes! We offer daily guided tours at 11 AM and 2 PM. Private group tours can be booked in advance through our contact form or by calling our visitor services line.
+          </div>
+        </article>
+        <article class="glass-card faq-item">
+          <div class="faq-question">
+            <span>Is the museum accessible?</span>
+            <span class="arrow">▼</span>
+          </div>
+          <div class="faq-answer">
+            MuseumX is fully wheelchair accessible with ramps, elevators, and accessible restrooms throughout. Wheelchairs are available free of charge at the main entrance.
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="nav-logo">STACKLY</span>
+          <p>Preserving humanity's greatest stories for future generations.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="exhibitions.html">Exhibitions</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Social Media</h4>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">in</a>
+            <a href="#" aria-label="Twitter">t</a>
+            <a href="#" aria-label="YouTube">yt</a>
+          </div>
+        </div>
+        <div>
+          <h4>Newsletter</h4>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email" required>
+            <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 STACKLY. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

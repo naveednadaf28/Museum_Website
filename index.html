@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MuseumX – Interactive Museum Experience. Explore ancient civilizations, digital exhibits, and world-class collections.">
+  <title>MuseumX – Interactive Museum Experience</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-logo">STACKLY</div>
+    <div class="loader-ring"></div>
+    <span class="loader-text">Loading Experience</span>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">STACKLY</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="exhibitions.html">Exhibitions</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" class="nav-login">Login</a>
+      </nav>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <nav class="mobile-menu" aria-label="Mobile navigation">
+    <div class="mobile-menu-header">
+    <a href="index.html" class="mobile-logo">STACKLY</a>
+    </div>
+    <button class="mobile-close" aria-label="Close menu">✕</button>
+    <div class="mobile-menu-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="exhibitions.html">Exhibitions</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Login</a>
+    </div>
+    <p class="mobile-menu-footer">Stackly · Est. 1924</p>
+  </nav>
+
+  <main>
+    <!-- SECTION 1: Hero -->
+    <section class="hero" id="hero">
+      <div class="hero-bg" data-parallax></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-glow"></div>
+      <div class="hero-content">
+        <span class="hero-badge">World-Class Cultural Institution</span>
+        <h1 class="hero-title">Discover the <span class="text-gradient">Extraordinary</span></h1>
+        <p class="hero-subtitle">Journey through millennia of human achievement. Experience world-class exhibitions, interactive digital galleries, and unforgettable cultural encounters.</p>
+        <div class="hero-cta btn-group" style="justify-content: center;">
+          <button class="btn btn-primary" data-scroll="#collections">Explore Collection</button>
+          <button class="btn btn-outline" data-link="contact.html">Book Visit</button>
+        </div>
+      </div>
+      <div class="hero-scroll" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="hero-scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: Featured Collections -->
+    <section class="section" id="collections">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Curated Galleries</span>
+          <h2 class="section-title">Featured Collections</h2>
+          <p class="section-subtitle">Curated masterpieces spanning art, history, and science from across the globe.</p>
+        </div>
+        <div class="cards-grid cols-3">
+          <article class="glass-card premium-card reveal reveal-delay-1">
+            <div class="card-image">
+              <img src="https://images.stockcake.com/public/f/0/3/f031ffc4-063b-4301-89d7-c9c27d406e0d/ancient-artifacts-displayed-stockcake.jpg" alt="Egyptian artifacts collection" loading="lazy" width="800" height="600">
+            </div>
+            <div class="card-body">
+              <span class="card-tag">Ancient Egypt</span>
+              <h3 class="card-title">Pharaoh's Legacy</h3>
+              <p class="card-text">Rare artifacts from the golden age of Egyptian civilization, including ceremonial masks and hieroglyphic scrolls.</p>
+              <span class="card-link">View Collection →</span>
+            </div>
+          </article>
+          <article class="glass-card premium-card reveal reveal-delay-2">
+            <div class="card-image">
+              <img src="https://thumbs.dreamstime.com/b/florence-italy-sep-arcade-classical-statues-palazzo-vecchio-row-stone-along-city-view-tuscany-457211298.jpg" alt="Classical sculpture gallery" loading="lazy" width="800" height="600">
+            </div>
+            <div class="card-body">
+              <span class="card-tag">Classical Art</span>
+              <h3 class="card-title">Marble & Bronze</h3>
+              <p class="card-text">Sculptures and reliefs from Greco-Roman antiquity, showcasing the pinnacle of classical artistic expression.</p>
+              <span class="card-link">View Collection →</span>
+            </div>
+          </article>
+          <article class="glass-card premium-card reveal reveal-delay-3">
+            <div class="card-image">
+              <img src="https://s7ap1.scene7.com/is/image/incredibleindia/national-gallery-of-modern-art-mumbai-maharashtra-4-musthead-hero?qlt=82&ts=1742185591908" alt="Modern art exhibition" loading="lazy" width="800" height="600">
+            </div>
+            <div class="card-body">
+              <span class="card-tag">Contemporary</span>
+              <h3 class="card-title">Modern Perspectives</h3>
+              <p class="card-text">Bold contemporary works that challenge perception and redefine the boundaries of artistic expression.</p>
+              <span class="card-link">View Collection →</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Ancient Civilizations -->
+    <section class="section section-alt" id="civilizations">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Through the Ages</span>
+          <h2 class="section-title">Ancient Civilizations</h2>
+          <p class="section-subtitle">Walk through the corridors of history and witness the rise of humanity's greatest empires.</p>
+        </div>
+        <div class="cards-grid cols-4">
+          <article class="glass-card premium-card reveal reveal-delay-1">
+            <div class="card-image">
+              <img src="https://www.metmuseum.org/-/media/images/learn/educators/lesson-plans/lesson-plan-power-in-ancient-mesopotamia_teaser.jpg?sc_lang=en" alt="Mesopotamian artifacts" loading="lazy" width="600" height="450">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Mesopotamia</h3>
+              <p class="card-text">The cradle of civilization and birthplace of writing.</p>
+            </div>
+          </article>
+          <article class="glass-card premium-card reveal reveal-delay-2">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&h=450&q=85" alt="Roman architecture" loading="lazy" width="600" height="450">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Roman Empire</h3>
+              <p class="card-text">Engineering marvels and imperial grandeur.</p>
+            </div>
+          </article>
+          <article class="glass-card premium-card reveal reveal-delay-3">
+            <div class="card-image">
+              <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/ab/48/3d/borneoartifactcom-arts.jpg?w=900&h=500&s=1" alt="Asian heritage artifacts" loading="lazy" width="600" height="450">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Asian Dynasties</h3>
+              <p class="card-text">Silk roads, porcelain, and imperial treasures.</p>
+            </div>
+          </article>
+          <article class="glass-card premium-card reveal">
+            <div class="card-image">
+              <img src="https://img.freepik.com/free-photo/inca-mayan-design-sculpted-stones_23-2151628464.jpg?semt=ais_hybrid&w=740&q=80" alt="Mesoamerican heritage" loading="lazy" width="600" height="450">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Mesoamerica</h3>
+              <p class="card-text">Maya, Aztec, and Olmec cultural heritage.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: Interactive Digital Exhibits -->
+    <section class="section" id="digital">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Innovation</span>
+          <h2 class="section-title">Interactive Digital Exhibits</h2>
+          <p class="section-subtitle">Immerse yourself in cutting-edge technology that brings history to life.</p>
+        </div>
+        <div class="cards-grid cols-3">
+          <article class="glass-card premium-card reveal reveal-delay-1">
+            <div class="card-image">
+              <img src="https://framesixty.com/wp-content/uploads/2026/05/vr-museums-hero.png" alt="VR museum experience" loading="lazy" width="800" height="600">
+            </div>
+            <div class="card-body">
+              <span class="card-tag">Virtual Reality</span>
+              <h3 class="card-title">VR Time Travel</h3>
+              <p class="card-text">Step into reconstructed ancient cities with immersive virtual reality experiences.</p>
+              <span class="card-link">Experience VR →</span>
+            </div>
+          </article>
+          <article class="glass-card premium-card reveal reveal-delay-2">
+            <div class="card-image">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2YrdnED1fAQJSlau0riEOSQOKZBrlPCf5tAJMPnqRLtinzJP6P1iXqjEf&s=10" alt="Interactive touchscreen exhibit" loading="lazy" width="800" height="600">
+            </div>
+            <div class="card-body">
+              <span class="card-tag">Touch & Explore</span>
+              <h3 class="card-title">Digital Archives</h3>
+              <p class="card-text">Browse thousands of digitized artifacts with interactive touch displays.</p>
+              <span class="card-link">Browse Archives →</span>
+            </div>
+          </article>
+          <article class="glass-card premium-card reveal reveal-delay-3">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&h=600&q=85" alt="Augmented reality exhibit" loading="lazy" width="800" height="600">
+            </div>
+            <div class="card-body">
+              <span class="card-tag">Augmented Reality</span>
+              <h3 class="card-title">AR Gallery</h3>
+              <p class="card-text">Overlay digital information onto physical exhibits with augmented reality.</p>
+              <span class="card-link">Explore AR →</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: Museum Statistics -->
+    <section class="section section-alt" id="statistics">
+      <div class="container">
+        <div class="section-header center reveal">
+          <span class="section-eyebrow">By the Numbers</span>
+          <h2 class="section-title">Museum at a Glance</h2>
+          <p class="section-subtitle">Numbers that reflect our commitment to preserving and sharing human heritage.</p>
+        </div>
+        <div class="stats-grid">
+          <div class="glass-card stat-card reveal reveal-delay-1">
+            <span class="stat-number" data-counter="2500000" data-suffix="+">0</span>
+            <span class="stat-label">Visitors</span>
+          </div>
+          <div class="glass-card stat-card reveal reveal-delay-2">
+            <span class="stat-number" data-counter="85000" data-suffix="+">0</span>
+            <span class="stat-label">Artifacts</span>
+          </div>
+          <div class="glass-card stat-card reveal reveal-delay-3">
+            <span class="stat-number" data-counter="320" data-suffix="+">0</span>
+            <span class="stat-label">Events</span>
+          </div>
+          <div class="glass-card stat-card reveal">
+            <span class="stat-number" data-counter="45" data-suffix="+">0</span>
+            <span class="stat-label">Collections</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: Upcoming Events -->
+    <section class="section" id="events">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Programs</span>
+          <h2 class="section-title">Upcoming Events</h2>
+          <p class="section-subtitle">Don't miss our curated programs, lectures, and special exhibitions.</p>
+        </div>
+        <div class="cards-grid cols-2">
+          <article class="glass-card event-card reveal reveal-delay-1">
+            <div class="event-date">
+              <span class="day">15</span>
+              <span class="month">Jul</span>
+            </div>
+            <div>
+              <h3 class="card-title">Night at the Museum</h3>
+              <p class="card-text">An exclusive after-hours tour with curators guiding you through hidden collections.</p>
+            </div>
+          </article>
+          <article class="glass-card event-card reveal reveal-delay-2">
+            <div class="event-date">
+              <span class="day">22</span>
+              <span class="month">Jul</span>
+            </div>
+            <div>
+              <h3 class="card-title">Ancient Egypt Symposium</h3>
+              <p class="card-text">Leading archaeologists discuss recent discoveries from the Valley of the Kings.</p>
+            </div>
+          </article>
+          <article class="glass-card event-card reveal reveal-delay-3">
+            <div class="event-date">
+              <span class="day">05</span>
+              <span class="month">Aug</span>
+            </div>
+            <div>
+              <h3 class="card-title">Family Discovery Day</h3>
+              <p class="card-text">Interactive workshops and hands-on activities designed for visitors of all ages.</p>
+            </div>
+          </article>
+          <article class="glass-card event-card reveal">
+            <div class="event-date">
+              <span class="day">18</span>
+              <span class="month">Aug</span>
+            </div>
+            <div>
+              <h3 class="card-title">Contemporary Art Opening</h3>
+              <p class="card-text">Premiere exhibition featuring emerging artists from around the world.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: Testimonials -->
+    <section class="section section-alt" id="testimonials">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Reviews</span>
+          <h2 class="section-title">Visitor Testimonials</h2>
+          <p class="section-subtitle">Hear from those who have experienced the magic of MuseumX.</p>
+        </div>
+        <div class="cards-grid cols-3">
+          <article class="glass-card testimonial-card reveal reveal-delay-1">
+            <p class="testimonial-text">An absolutely breathtaking experience. The digital exhibits alone are worth the visit — I've never seen history presented this way.</p>
+            <div class="testimonial-author">
+              <img class="testimonial-avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&h=100&q=85" alt="Sarah Mitchell" loading="lazy" width="48" height="48">
+              <div>
+                <div class="testimonial-name">Sarah Mitchell</div>
+                <div class="testimonial-role">Art Historian, London</div>
+              </div>
+            </div>
+          </article>
+          <article class="glass-card testimonial-card reveal reveal-delay-2">
+            <p class="testimonial-text">Our family spent an entire day here and still didn't see everything. The children's programs are exceptional and truly engaging.</p>
+            <div class="testimonial-author">
+              <img class="testimonial-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&h=100&q=85" alt="James Chen" loading="lazy" width="48" height="48">
+              <div>
+                <div class="testimonial-name">James Chen</div>
+                <div class="testimonial-role">Parent & Educator</div>
+              </div>
+            </div>
+          </article>
+          <article class="glass-card testimonial-card reveal reveal-delay-3">
+            <p class="testimonial-text">As a researcher, the archival access and curator expertise here are unparalleled. MuseumX sets the standard for cultural institutions.</p>
+            <div class="testimonial-author">
+              <img class="testimonial-avatar" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=100&h=100&q=85" alt="Dr. Elena Vasquez" loading="lazy" width="48" height="48">
+              <div>
+                <div class="testimonial-name">Dr. Elena Vasquez</div>
+                <div class="testimonial-role">Archaeologist, Madrid</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: Membership CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-section reveal">
+          <h2>Become a Stackly Member</h2>
+          <p>Unlock unlimited access, exclusive events, priority booking, and special member-only exhibitions throughout the year.</p>
+          <div class="btn-group" style="justify-content: center;">
+            <button class="btn btn-primary" data-link="signup.html">Join Today</button>
+            <button class="btn btn-outline" data-link="contact.html">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="nav-logo">STACKLY</span>
+          <p>Preserving humanity's greatest stories for future generations. Visit us and discover the extraordinary.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="exhibitions.html">Exhibitions</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Social Media</h4>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">in</a>
+            <a href="#" aria-label="Twitter">t</a>
+            <a href="#" aria-label="YouTube">yt</a>
+          </div>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li>Bengaluru, Karnataka, India</li>
+            <li>+91 9876543210</li>
+            <li>info@thestackly.com</li>
+          </ul>
+          <h4 style="margin-top: 1.5rem;">Newsletter</h4>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 STACKLY. All rights reserved. Interactive Museum Experience.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

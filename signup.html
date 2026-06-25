@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Create your MuseumX account and unlock member benefits.">
+  <title>Sign Up – MuseumX</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="form-page">
+    <div class="form-back">
+      <a href="login.html">← Back To Login</a>
+    </div>
+
+    <div class="form-container">
+      <div class="glass-card form-card">
+        <h1>Create Account</h1>
+        <p class="form-subtitle">Join MuseumX and start your cultural journey</p>
+
+        <form id="signupForm">
+          <div class="form-group">
+            <label for="signupName">Full Name</label>
+            <input type="text" id="signupName" name="name" required placeholder="John Doe" autocomplete="name">
+          </div>
+
+          <div class="form-group">
+            <label for="signupEmail">Email</label>
+            <input type="email" id="signupEmail" name="email" required placeholder="your@email.com" autocomplete="email">
+            <span class="form-error" id="signupEmailError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="signupPassword">Password</label>
+            <input type="password" id="signupPassword" name="password" required placeholder="Create a password" autocomplete="new-password">
+          </div>
+
+          <div class="form-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Confirm your password" autocomplete="new-password">
+            <span class="form-error" id="passwordError"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Create Account</button>
+        </form>
+
+        <p class="form-footer-link">
+          Already have an account? <a href="login.html">Login</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

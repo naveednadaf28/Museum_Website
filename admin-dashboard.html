@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MuseumX Administrator Dashboard – manage users, exhibitions, events, and reports.">
+  <title>Admin Dashboard – MuseumX</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="dashboard-sidebar-overlay"></div>
+
+  <div class="dashboard-layout">
+    <aside class="dashboard-sidebar">
+      <div class="sidebar-logo">
+        <a href="index.html" class="nav-logo">STACKLY</a>
+      </div>
+      <div class="sidebar-user">
+        <img class="sidebar-user-avatar" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=84&h=84&q=85" alt="Admin" width="42" height="42">
+        <div>
+          <div class="sidebar-user-name">Admin User</div>
+          <div class="sidebar-user-role">Administrator</div>
+        </div>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="#" class="active" data-section="dashboard"><span class="icon">◉</span> Dashboard</a>
+        <a href="#" data-section="users"><span class="icon">◎</span> Users</a>
+        <a href="#" data-section="exhibitions"><span class="icon">▤</span> Exhibitions</a>
+        <a href="#" data-section="events"><span class="icon">▣</span> Events</a>
+        <a href="#" data-section="reports"><span class="icon">▥</span> Reports</a>
+        <a href="#" data-section="settings"><span class="icon">⚙</span> Settings</a>
+      </nav>
+      <div class="sidebar-footer">
+        <button class="btn btn-outline btn-sm" style="width: 100%;" data-logout>Logout</button>
+      </div>
+    </aside>
+
+    <div class="dashboard-main">
+      <header class="dashboard-header">
+        <button class="sidebar-toggle hamburger" aria-label="Toggle sidebar">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <span class="dashboard-header-title"><strong>Admin Portal</strong> · Analytics</span>
+        <button class="btn btn-outline btn-sm" data-logout>Logout</button>
+      </header>
+
+      <div class="dashboard-content">
+        <!-- Dashboard Section -->
+        <div data-dashboard-section="dashboard">
+          <div class="glass-card welcome-banner reveal">
+            <h1>Administrator <span class="text-gradient">Dashboard</span></h1>
+            <p>Enterprise overview of museum operations, visitor analytics, and performance metrics.</p>
+          </div>
+
+          <div class="dashboard-stats">
+            <div class="glass-card dash-stat-card reveal">
+              <div class="stat-icon">◉</div>
+              <div class="value accent" data-counter="248532">0</div>
+              <div class="label">Total Visitors (YTD)</div>
+              <span class="trend trend-up">↑ 12.4%</span>
+            </div>
+            <div class="glass-card dash-stat-card reveal">
+              <div class="stat-icon">$</div>
+              <div class="value accent">$2.4M</div>
+              <div class="label">Revenue (YTD)</div>
+              <span class="trend trend-up">↑ 8.2%</span>
+            </div>
+            <div class="glass-card dash-stat-card reveal">
+              <div class="stat-icon">◎</div>
+              <div class="value accent" data-counter="12847">0</div>
+              <div class="label">Registered Users</div>
+              <span class="trend trend-up">↑ 340 new</span>
+            </div>
+            <div class="glass-card dash-stat-card reveal">
+              <div class="stat-icon">▤</div>
+              <div class="value accent">45</div>
+              <div class="label">Active Exhibitions</div>
+              <span class="trend trend-up">3 opening soon</span>
+            </div>
+          </div>
+
+          <div class="dashboard-grid cols-2">
+            <!-- Revenue Analytics -->
+            <div class="glass-card dashboard-panel reveal">
+              <div class="panel-header">
+                <h3>Revenue Analytics</h3>
+                <span class="panel-action">Export</span>
+              </div>
+              <p style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 1rem;">Monthly revenue ($ thousands)</p>
+              <div class="analytics-chart">
+                <div class="chart-bar" data-height="45%"></div>
+                <div class="chart-bar" data-height="62%"></div>
+                <div class="chart-bar" data-height="55%"></div>
+                <div class="chart-bar" data-height="78%"></div>
+                <div class="chart-bar" data-height="70%"></div>
+                <div class="chart-bar" data-height="85%"></div>
+                <div class="chart-bar" data-height="92%"></div>
+                <div class="chart-bar" data-height="88%"></div>
+                <div class="chart-bar" data-height="95%"></div>
+                <div class="chart-bar" data-height="100%"></div>
+                <div class="chart-bar" data-height="90%"></div>
+                <div class="chart-bar" data-height="82%"></div>
+              </div>
+              <div class="chart-labels">
+                <span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span>
+                <span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span><span>Nov</span><span>Dec</span>
+              </div>
+            </div>
+
+            <!-- Exhibition Performance -->
+            <div class="glass-card dashboard-panel reveal">
+              <div class="panel-header">
+                <h3>Exhibition Performance</h3>
+                <span class="panel-action">Details</span>
+              </div>
+              <div class="progress-item">
+                <div class="progress-header">
+                  <strong>Egypt: Land of Pharaohs</strong>
+                  <span style="color: var(--accent-gold);">92%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" data-width="92%"></div>
+                </div>
+              </div>
+              <div class="progress-item">
+                <div class="progress-header">
+                  <strong>VR Time Travel</strong>
+                  <span style="color: var(--accent-teal);">88%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" data-width="88%" style="background: linear-gradient(90deg, var(--accent-teal), rgba(94,224,214,0.4));"></div>
+                </div>
+              </div>
+              <div class="progress-item">
+                <div class="progress-header">
+                  <strong>Modern Expressions</strong>
+                  <span style="color: var(--accent-purple);">76%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" data-width="76%" style="background: linear-gradient(90deg, var(--accent-purple), rgba(167,139,250,0.4));"></div>
+                </div>
+              </div>
+              <div class="progress-item">
+                <div class="progress-header">
+                  <strong>Silk Road Treasures</strong>
+                  <span style="color: var(--accent-gold);">71%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" data-width="71%"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- User Management Table -->
+            <div class="glass-card dashboard-panel reveal" style="grid-column: 1 / -1;">
+              <h3>User Management</h3>
+              <div class="data-table-wrapper">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Name</th>
+                      <th>Email</th>
+                      <th>Role</th>
+                      <th>Status</th>
+                      <th>Joined</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>#12847</td>
+                      <td>John Visitor</td>
+                      <td>visitor@museumx.org</td>
+                      <td>Member</td>
+                      <td><span class="badge badge-success">Active</span></td>
+                      <td>Jan 2024</td>
+                    </tr>
+                    <tr>
+                      <td>#12846</td>
+                      <td>Sarah Mitchell</td>
+                      <td>sarah.m@email.com</td>
+                      <td>Member</td>
+                      <td><span class="badge badge-success">Active</span></td>
+                      <td>Mar 2024</td>
+                    </tr>
+                    <tr>
+                      <td>#12845</td>
+                      <td>James Chen</td>
+                      <td>jchen@email.com</td>
+                      <td>Member</td>
+                      <td><span class="badge badge-success">Active</span></td>
+                      <td>Feb 2025</td>
+                    </tr>
+                    <tr>
+                      <td>#12844</td>
+                      <td>Dr. Elena Vasquez</td>
+                      <td>elena.v@research.org</td>
+                      <td>Researcher</td>
+                      <td><span class="badge badge-success">Active</span></td>
+                      <td>Nov 2023</td>
+                    </tr>
+                    <tr>
+                      <td>#12843</td>
+                      <td>Michael Torres</td>
+                      <td>m.torres@email.com</td>
+                      <td>Member</td>
+                      <td><span class="badge badge-warning">Pending</span></td>
+                      <td>Jun 2026</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Event Overview -->
+            <div class="glass-card dashboard-panel reveal">
+              <h3>Event Overview</h3>
+              <div class="activity-item">
+                <div class="event-date" style="width: 56px;">
+                  <span class="day">15</span>
+                  <span class="month">Jul</span>
+                </div>
+                <div>
+                  <strong>Night at the Museum</strong>
+                  <p style="color: var(--text-secondary); font-size: 0.85rem;">847 registered · 92% capacity</p>
+                </div>
+              </div>
+              <div class="activity-item">
+                <div class="event-date" style="width: 56px;">
+                  <span class="day">22</span>
+                  <span class="month">Jul</span>
+                </div>
+                <div>
+                  <strong>Ancient Egypt Symposium</strong>
+                  <p style="color: var(--text-secondary); font-size: 0.85rem;">320 registered · 64% capacity</p>
+                </div>
+              </div>
+              <div class="activity-item">
+                <div class="event-date" style="width: 56px;">
+                  <span class="day">05</span>
+                  <span class="month">Aug</span>
+                </div>
+                <div>
+                  <strong>Family Discovery Day</strong>
+                  <p style="color: var(--text-secondary); font-size: 0.85rem;">1,240 registered · 78% capacity</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Reports -->
+            <div class="glass-card dashboard-panel reveal">
+              <h3>Reports</h3>
+              <div class="activity-item">
+                <span class="activity-dot"></span>
+                <div>
+                  <strong>Q2 2026 Visitor Report</strong>
+                  <p style="color: var(--text-muted); font-size: 0.8rem;">Generated Jun 15, 2026</p>
+                </div>
+              </div>
+              <div class="activity-item">
+                <span class="activity-dot"></span>
+                <div>
+                  <strong>Revenue Summary – May 2026</strong>
+                  <p style="color: var(--text-muted); font-size: 0.8rem;">Generated Jun 1, 2026</p>
+                </div>
+              </div>
+              <div class="activity-item">
+                <span class="activity-dot"></span>
+                <div>
+                  <strong>Exhibition Analytics – H1 2026</strong>
+                  <p style="color: var(--text-muted); font-size: 0.8rem;">Generated May 28, 2026</p>
+                </div>
+              </div>
+              <div class="activity-item">
+                <span class="activity-dot"></span>
+                <div>
+                  <strong>Membership Growth Report</strong>
+                  <p style="color: var(--text-muted); font-size: 0.8rem;">Generated May 15, 2026</p>
+                </div>
+              </div>
+              <button class="btn btn-outline btn-sm" style="margin-top: 1rem;">Generate New Report</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Users Section -->
+        <div data-dashboard-section="users" style="display: none;">
+          <h2 class="section-title">User Management</h2>
+          <div class="glass-card dashboard-panel">
+            <div class="data-table-wrapper">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>#12847</td>
+                    <td>John Visitor</td>
+                    <td>visitor@museumx.org</td>
+                    <td>Member</td>
+                    <td><span class="badge badge-success">Active</span></td>
+                    <td><button class="btn btn-outline btn-sm">Edit</button></td>
+                  </tr>
+                  <tr>
+                    <td>#12846</td>
+                    <td>Sarah Mitchell</td>
+                    <td>sarah.m@email.com</td>
+                    <td>Member</td>
+                    <td><span class="badge badge-success">Active</span></td>
+                    <td><button class="btn btn-outline btn-sm">Edit</button></td>
+                  </tr>
+                  <tr>
+                    <td>#12845</td>
+                    <td>James Chen</td>
+                    <td>jchen@email.com</td>
+                    <td>Member</td>
+                    <td><span class="badge badge-success">Active</span></td>
+                    <td><button class="btn btn-outline btn-sm">Edit</button></td>
+                  </tr>
+                  <tr>
+                    <td>#12844</td>
+                    <td>Dr. Elena Vasquez</td>
+                    <td>elena.v@research.org</td>
+                    <td>Researcher</td>
+                    <td><span class="badge badge-success">Active</span></td>
+                    <td><button class="btn btn-outline btn-sm">Edit</button></td>
+                  </tr>
+                  <tr>
+                    <td>#12843</td>
+                    <td>Michael Torres</td>
+                    <td>m.torres@email.com</td>
+                    <td>Member</td>
+                    <td><span class="badge badge-warning">Pending</span></td>
+                    <td><button class="btn btn-outline btn-sm">Edit</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Exhibitions Section -->
+        <div data-dashboard-section="exhibitions" style="display: none;">
+          <h2 class="section-title">Exhibition Management</h2>
+          <div class="cards-grid cols-3">
+            <article class="glass-card" style="padding: 1.5rem;">
+              <span class="card-tag">Permanent</span>
+              <h3 class="card-title">Egypt: Land of Pharaohs</h3>
+              <p class="card-text">Visitors: 48,200 YTD</p>
+              <p style="color: var(--accent-gold); font-size: 0.85rem;">Performance: 92%</p>
+            </article>
+            <article class="glass-card" style="padding: 1.5rem;">
+              <span class="card-tag">Interactive</span>
+              <h3 class="card-title">VR Time Travel</h3>
+              <p class="card-text">Visitors: 32,100 YTD</p>
+              <p style="color: var(--accent-gold); font-size: 0.85rem;">Performance: 88%</p>
+            </article>
+            <article class="glass-card" style="padding: 1.5rem;">
+              <span class="card-tag">Gallery C</span>
+              <h3 class="card-title">Modern Expressions</h3>
+              <p class="card-text">Visitors: 24,800 YTD</p>
+              <p style="color: var(--accent-gold); font-size: 0.85rem;">Performance: 76%</p>
+            </article>
+          </div>
+        </div>
+
+        <!-- Events Section -->
+        <div data-dashboard-section="events" style="display: none;">
+          <h2 class="section-title">Event Management</h2>
+          <div class="glass-card dashboard-panel">
+            <div class="activity-item">
+              <div class="event-date" style="width: 56px;">
+                <span class="day">15</span>
+                <span class="month">Jul</span>
+              </div>
+              <div style="flex: 1;">
+                <strong>Night at the Museum</strong>
+                <p style="color: var(--text-secondary); font-size: 0.85rem;">847 registered · Capacity: 920</p>
+              </div>
+              <button class="btn btn-outline btn-sm">Manage</button>
+            </div>
+            <div class="activity-item">
+              <div class="event-date" style="width: 56px;">
+                <span class="day">22</span>
+                <span class="month">Jul</span>
+              </div>
+              <div style="flex: 1;">
+                <strong>Ancient Egypt Symposium</strong>
+                <p style="color: var(--text-secondary); font-size: 0.85rem;">320 registered · Capacity: 500</p>
+              </div>
+              <button class="btn btn-outline btn-sm">Manage</button>
+            </div>
+            <div class="activity-item">
+              <div class="event-date" style="width: 56px;">
+                <span class="day">05</span>
+                <span class="month">Aug</span>
+              </div>
+              <div style="flex: 1;">
+                <strong>Family Discovery Day</strong>
+                <p style="color: var(--text-secondary); font-size: 0.85rem;">1,240 registered · Capacity: 1,600</p>
+              </div>
+              <button class="btn btn-outline btn-sm">Manage</button>
+            </div>
+            <button class="btn btn-primary" style="margin-top: 1rem;">Create New Event</button>
+          </div>
+        </div>
+
+        <!-- Reports Section -->
+        <div data-dashboard-section="reports" style="display: none;">
+          <h2 class="section-title">Reports & Analytics</h2>
+          <div class="dashboard-grid cols-2">
+            <div class="glass-card dashboard-panel">
+              <h3>Available Reports</h3>
+              <div class="activity-item">
+                <span class="activity-dot"></span>
+                <div>
+                  <strong>Q2 2026 Visitor Report</strong>
+                  <p style="color: var(--text-muted); font-size: 0.8rem;">PDF · 2.4 MB</p>
+                </div>
+                <button class="btn btn-outline btn-sm">Download</button>
+              </div>
+              <div class="activity-item">
+                <span class="activity-dot"></span>
+                <div>
+                  <strong>Revenue Summary – May 2026</strong>
+                  <p style="color: var(--text-muted); font-size: 0.8rem;">PDF · 1.8 MB</p>
+                </div>
+                <button class="btn btn-outline btn-sm">Download</button>
+              </div>
+              <div class="activity-item">
+                <span class="activity-dot"></span>
+                <div>
+                  <strong>Exhibition Analytics – H1 2026</strong>
+                  <p style="color: var(--text-muted); font-size: 0.8rem;">PDF · 3.1 MB</p>
+                </div>
+                <button class="btn btn-outline btn-sm">Download</button>
+              </div>
+            </div>
+            <div class="glass-card dashboard-panel">
+              <h3>Generate Report</h3>
+              <div class="form-group">
+                <label>Report Type</label>
+                <select>
+                  <option>Visitor Analytics</option>
+                  <option>Revenue Summary</option>
+                  <option>Exhibition Performance</option>
+                  <option>Membership Growth</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Date Range</label>
+                <select>
+                  <option>Last 30 days</option>
+                  <option>Last quarter</option>
+                  <option>Year to date</option>
+                  <option>Custom range</option>
+                </select>
+              </div>
+              <button class="btn btn-primary">Generate Report</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Settings Section -->
+        <div data-dashboard-section="settings" style="display: none;">
+          <h2 class="section-title">Admin Settings</h2>
+          <div class="glass-card dashboard-panel" style="max-width: 600px;">
+            <h3 style="margin-bottom: 1rem;">System Configuration</h3>
+            <div class="form-group">
+              <label>Museum Name</label>
+              <input type="text" value="MuseumX">
+            </div>
+            <div class="form-group">
+              <label>Admin Email</label>
+              <input type="email" value="admin@museumx.org">
+            </div>
+            <div class="form-group">
+              <label>Notification Level</label>
+              <select>
+                <option>All alerts</option>
+                <option>Critical only</option>
+                <option>None</option>
+              </select>
+            </div>
+            <h3 style="margin: 1.5rem 0 1rem;">Security</h3>
+            <div class="form-group">
+              <label>Change Password</label>
+              <input type="password" placeholder="New admin password">
+            </div>
+            <button class="btn btn-primary">Save Settings</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
