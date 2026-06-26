@@ -630,7 +630,7 @@ background:rgba(212,175,106,.08);
 
 .mobile-menu-nav a {
   font-family: var(--font-display);
-  font-size: clamp(1.75rem, 5vw, 2.25rem);
+  font-size: clamp(0.75rem, 5vw, 2.25rem);
   color: var(--text-secondary);
   padding: 0.5rem 1.5rem;
   transition: color var(--transition), transform var(--transition);
@@ -679,7 +679,7 @@ transition: all .35s ease;
     z-index:1005;
 
     font-family:var(--font-display);
-    font-size:2rem;
+    font-size:1.5rem;
     font-weight:700;
     letter-spacing:1px;
     text-decoration:none;
@@ -798,6 +798,9 @@ background:rgba(255,255,255,.05);
 border:1px solid rgba(212,175,106,.25);
 
 transition:.35s;
+
+ z-index:999999 !important;
+    pointer-events:auto !important;
 
 }
 
